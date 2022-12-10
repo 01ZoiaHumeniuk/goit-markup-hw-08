@@ -1,0 +1,35 @@
+.background{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../imeges/Img-bg\(1\).jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+        min-width: 480px;
+        height: 400px;
+}
+.order-text{
+  padding-top: 118px;
+  font-weight: 900;
+    font-size: 26px;
+    line-height:calc(42/26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+.order-button{
+      margin: 0 auto;
+      display: block;
+      border-radius: 4px;
+      margin-top: 30px;
+      padding: 10px 24px;
+  cursor: pointer;
+  font-weight: 700;
+    font-size: 16px;
+    line-height:calc(30/16);
+    background-color: var(--accent-color);
+    color: var(--main-color);
+      align-items: center;
+      text-align: center;
+      border: 0;
+}

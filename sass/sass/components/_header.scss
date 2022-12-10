@@ -1,0 +1,124 @@
+.header-Studio{
+@include text-logo;
+  color:var(--title-text-color);
+}
+.header-web{
+@include text-logo;
+  color:var(--accent-color);
+
+}
+.header-contaktes{ 
+  display: none;
+}
+.header-link{
+  display: none;
+}
+.list-alignment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-open{ 
+  background-color: var(--main-color);
+  border: none;
+}
+.icon-menu{
+width: 40px;
+margin-left: auto;
+fill: var(--title-text-color);
+cursor: pointer;
+  &:focus,
+  &:active{
+    fill: var(--color-hover-icone);
+  }
+}
+.menu{
+  position: fixed;
+  z-index: 1px;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-color);
+  padding-top: 48px;
+  padding-bottom: 40px;
+  >.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.menu-close{
+  display: block;
+  margin-left: auto;
+  background-color:var(--main-color) ;
+  border: none;
+}
+.icon-close {
+  fill: var(--title-text-color);
+
+  &:focus,
+  &:active {
+    fill: var(--color-hover-icone);
+  }
+}
+.menu-item:not(:last-child){
+  margin-bottom: 32px;
+}
+.menu-link{
+  font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17px;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    &:focus,
+    &:active{
+      color: var(--color-hover-icone);
+    }
+}
+.menu-flex{
+  margin-bottom: 300px;
+}
+.menu-cont{
+  font-weight: 500;
+    font-size: 34px;
+    line-height:calc(40/34);
+    letter-spacing: 0.02em;
+    color: var(--color-hover-icone);
+}
+.menu-contacts:not(:last-child){
+  margin-bottom: 32px;
+}
+.menu-mail{
+  font-weight: 500;
+    font-size: 24px;
+    line-height:calc(28/24);
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.menu-position{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+.menu-social{
+  font-weight: 500;
+    font-size: 18px;
+    line-height:calc(22/18);
+    letter-spacing: 0.02em;
+    color: var(--color-hover-icone);
+}
+.mob-meny{
+  margin-bottom: 64px;
+}
+.menu-list:after{
+  content:"";
+  width:22px;
+  height: 1px;
+  position: absolute;
+  transform: rotate(-90deg);
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
