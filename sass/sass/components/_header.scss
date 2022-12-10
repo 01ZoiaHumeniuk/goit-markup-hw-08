@@ -9,9 +9,21 @@
 }
 .header-contaktes{ 
   display: none;
+
+@media screen and (min-wigth:768px){
+    display: block;
+    font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: #212121;
+  }
 }
 .header-link{
   display: none;
+  @include tablet {
+      display: block;
+    }
 }
 .list-alignment {
   display: flex;
@@ -21,6 +33,9 @@
 .menu-open{ 
   background-color: var(--main-color);
   border: none;
+  @media screen and (min-wigth:780px) {
+    display: none;
+  }
 }
 .icon-menu{
 width: 40px;
