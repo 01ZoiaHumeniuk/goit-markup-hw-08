@@ -4,8 +4,44 @@
     line-height: 1.66;
     letter-spacing: 0.03em;
 }
+@mixin text_networks{
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
 
+}
+@mixin text_title{
+  font-weight: 700;
+    font-size: 28px;
+    line-height:1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+@mixin footer_text_contaсts{
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--footer-color);
+}
+@mixin logo{
+font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 
+}
+@mixin text{
+    font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+}
 
 @mixin mobile{
   @media screen and (min-wigth:480px){

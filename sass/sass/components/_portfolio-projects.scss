@@ -1,0 +1,60 @@
+.projects-absolut{
+
+}
+.shadow{
+display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 2);
+  &:hover,
+  &:focus{
+  box-shadow:
+      0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+}
+.text-projects-js {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font: weight 400px;
+  font-size: 18px;
+  line-height: 1.5555;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--main-color);
+  transform: translateY(100%);
+  .shadow:hover &{
+      transform: translateY(0);
+  }
+}
+.background-projeckt {
+  padding: 20PX 24px;
+  border-left: 1PX solid #EEEEEE;
+  border-right: 1PX solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+.projects-absolut {
+  position: relative;
+  overflow: hidden;
+}
+.titel {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+
+}
+.titel-content {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+
+}
+.list-projects{
+  margin-bottom: 50px;
+}

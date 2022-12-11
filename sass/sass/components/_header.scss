@@ -10,7 +10,7 @@
 .header-contaktes{ 
   display: none;
 
-@media screen and (min-wigth:768px){
+ @include tablet{
     display: block;
     font-weight: 500;
       font-size: 14px;
@@ -33,7 +33,7 @@
 .menu-open{ 
   background-color: var(--main-color);
   border: none;
-  @media screen and (min-wigth:780px) {
+  @include tablet{
     display: none;
   }
 }

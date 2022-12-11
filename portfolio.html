@@ -14,7 +14,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -51,13 +51,16 @@
         <!--сховати в css-->
           <h1 class="heddin field-none">список проектов</h1>
           <!--список кнопок-->
-          <ul class="list bottom-flex">
-            <li class="bottom-position"><button class="button-filter" type="button">Усі</button></li>
-            <li class="bottom-position"><button class="button-filter" type="button">Веб-сайт</button></li>
-            <li class="bottom-position"><button class="button-filter" type="button">Додатки</button></li>
-            <li class="bottom-position"><button class="button-filter" type="button">Дизайн</button></li>
-            <li class="bottom-position"><button class="button-filter" type="button">Маркетинг</button></li>
-          </ul>
+          <div class="container">
+            <ul class="list bottom-flex">
+              <li class="bottom-position"><button class="button-filter" type="button">Усі</button></li>
+              <li class="bottom-position"><button class="button-filter" type="button">Веб-сайт</button></li>
+              <li class="bottom-position"><button class="button-filter" type="button">Додатки</button></li>
+              <li class="bottom-position"><button class="button-filter" type="button">Дизайн</button></li>
+              <li class="bottom-position"><button class="button-filter" type="button">Маркетинг</button></li>
+            </ul>
+          </div>
+
           <!--проекти-->
           <ul class="list projects-flex ">
             <li class="list-projects">
@@ -214,7 +217,7 @@
             <input class="imput-footer" type="email" name="email" placeholder="E-mail" />
             <button type="submit" class="footer-button">Підписатися
               <svg class="icon-submit" width="24" height="24">
-                <use href="./imeges/icons.svg#icon-icon-send-1"></use>
+                <use href="./imeges/icons.svg#icon-icon-send-2-1"></use>
               </svg></button>
           </div>
         </form>

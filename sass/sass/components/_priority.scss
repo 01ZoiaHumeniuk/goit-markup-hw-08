@@ -1,0 +1,27 @@
+.icon-priorities{
+  display: flex;
+  justify-content: center;
+  margin: 0, auto;
+  width: 450px;
+  height: 100%;
+  padding: 25px;
+  background-color:var(--color-button);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.priorities-title{
+@include text;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.priorities-text {
+  width: 450px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-paragraph-color);
+  margin-bottom: 30px;
+}
