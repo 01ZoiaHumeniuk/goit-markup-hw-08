@@ -298,9 +298,7 @@ body {
 /* -----------список приорітетів компані */
 
 
-.priority-flex {
-  width: calc((100% - 90px)/4);
-}
+
 
 .priority-flex li:last-child {
   margin: 0;
@@ -317,6 +315,7 @@ body {
 .priorities-flex {
   display: flex;
   gap: 30px;
+  width: calc((100% - 90px)/4); 
 }
 
 .icon-priorities {

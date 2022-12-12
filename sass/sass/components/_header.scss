@@ -23,13 +23,77 @@
   display: none;
   @include tablet {
       display: block;
+    @include text-hedear-link;
+    color: var(--title-text-color);
+      display: flex;
     }
+
 }
 .list-alignment {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@include tablet{
+  .header-link-pos {
+      display: flex;
+      gap: 50px;
+    }
+    .flex-list{
+    @include text-hedear-link;
+    color: var(--title-text-color); 
+    margin-top: 32px;
+    margin-bottom: 32px;
+      position: relative;
+    }
+
+    .header-link{
+    &:focus,
+      &:active {
+        color: var(--color-hover-icone);
+      }
+    }
+    .header-link.current {
+      color: var(--accent-color);
+    }
+    .header-link.current:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background-color: var(--color-hover-icone);
+      position: absolute;
+      left: 0;
+      bottom: -28px;
+    }
+    .body-modal {
+      position: relative;
+    }
+      
+    .header-contaktes {
+      @include text-header-contaktes;
+      color: var(--text-paragraph-color);
+    
+      }
+    .icon-header {
+      fill: currentColor;
+      margin-right: 8px;
+    
+    }
+    .flex-first {
+        margin-top: 10px;
+        
+      }
+          }
+
+
+
+@include desktop{
+.header {
+    border-bottom: 1px solid #ECECEC;
+  }
+}
+
+/*--------menu-------*/
 .menu-open{ 
   background-color: var(--main-color);
   border: none;
