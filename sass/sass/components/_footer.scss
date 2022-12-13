@@ -122,3 +122,30 @@ justify-content: center;
   top: 8px;
 
 }
+@include tablet {
+  .box-address {
+    width: 100%;
+position: relative;
+padding-left: 75px;
+justify-content: center;
+
+  }
+
+  .footer-box {
+    position: absolute;
+    text-align: center;
+    
+  }
+  .address{
+@include footer_text_contaсts;
+color: var(--main-color);
+margin-bottom: 8px;
+  }
+    .footer-container{
+      padding-top: 60px;
+
+      @include text-prioriti;
+    
+    }
+    
+}
