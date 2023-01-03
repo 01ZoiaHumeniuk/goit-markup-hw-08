@@ -45,4 +45,12 @@ width: calc((100% - 30px)/2);
 @include text-prioriti;
 margin-bottom: 0;
 }
+@include desktop{
+  .priorities-flex{
+    flex-wrap: nowrap;
+  }
+}
+.priority-flex {
+  width: calc((100% - 90px)/4);
+}
 }

@@ -19,31 +19,63 @@
 
 <body>
   
-  <header class="header heder-border ">
-    <div class="container list-alignment ">
-        <a href="#" class="header-Studio flex-second style-none" data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"><span class="header-web">Web</span>Studio</a>
-        <nav class="">
-          <ul class="list">
-            <li class="flex-list"><a href="./index.html" class="header-link  style-none "> Студія </a></li>
-            <li class="flex-list"><a href="./portfolio.html " class="header-link current style-none"> Портфоліо </a></li>
-            <li class="flex-list"><a href="#" class="header-link style-none "> Контакти </a></li>
-          </ul>
-        </nav>
-        <ul class="list">
-          <li class="flex-first"><a class="header-contaktes style-none " href="mailto:info@devstudio.com"><svg class="icon-header" width="16" height="12">
-            <use href="./imeges/icons.svg#icon--1" width="16" height="12"></use>
-          </svg>info@devstudio.com</a>
-          </li>
+  <header class="header">
+    <div class="container list-alignment">
+      <a href="#" class="header-Studio flex-second style-none" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><span class="header-web">Web</span>Studio</a>
+      <nav class="">
+        <ul class="list header-link-pos">
+          <li class="flex-list"><a href="./index.html" class="header-link  style-none "> Студія </a></li>
+          <li class="flex-list"><a href="./portfolio.html" class="header-link  current style-none"> Портфоліо </a></li>
+          <li class="flex-list"><a href="#" class="header-link style-none "> Контакти </a></li>
+        </ul>
+      </nav>
+      <ul class="list ">
+        <li class="flex-first  "><a class=" header-contaktes style-none " href="mailto:info@devstudio.com">
+            <svg class="icon-header" width="16" height="12">
+              <use href="./imeges/icons.svg#icon--1"></use>
+            </svg>info@devstudio.com</a></li>
         <li class="flex-first icon-en "><a class="header-contaktes style-none " href="tel:+380961111111">
             <svg class="icon-header" width="10" height="16">
               <use href="./imeges/icons.svg#icon-smartphone-1"></use>
             </svg>+38 096 111 11 11</a></li>
-            </ul>
+      </ul>
+      <button type="button" class="menu-open" data-menu-open>
+        <svg width="24" height="16" class="icon-menu">
+          <use href="./imeges/icons.svg#icon-menu"></use>
+        </svg></button>
+  
+      <div class="menu container is-hidden" data-menu>
+        <div><button type="button" class="menu-close" data-menu-close>
+            <svg width="24" height="16" class="icon-close">
+              <use href="./imeges/icons.svg#icon-close-black-18"></use>
+            </svg>
+          </button>
+          <ul class="menu-flex">
+            <li class="menu-item list "><a class="menu-link style-none" href="#">Студія</a></li>
+            <li class="menu-item list "><a class="menu-link style-none" href="./portfolio.html">Портфоліо</a></li>
+            <li class="menu-item list "><a class="menu-link style-none" href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mob-meny">
+            <li class="menu-contacts list "><a class="menu-cont style-none" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="menu-contacts list "><a class="menu-mail style-none"
+                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu-position">
+            <li class="menu-list list "><a class="menu-social style-none" href="">Instagram</a></li>
+            <li class="menu-list list "><a class="menu-social style-none" href="">Twitter</a></li>
+            <li class="menu-list list "><a class="menu-social style-none" href="">Facebook</a></li>
+            <li class="menu-list list "><a class="menu-social style-none" href="">LinkedIn</a></li>
+          </ul>
+        </div>
+  
+      </div>
     </div>
+  
   </header>
-
   <!--кнопки-->
   <main>
     <section class="section ">
@@ -178,19 +210,20 @@
     </section>
   </main>
   <footer class="box-address">
-  
     <div class="container">
-      <div class="wrapper">
+      <div class="footer-box">
         <a href="#" class="footer-studio style-none "><span class="footer-web">Web</span>Studio</a>
         <ul class=" list footer-list footer-flex">
-          <li class="address">м. Київ, пр-т Лесі Українки, 26</li>
-          <li class="widht"><a class="box-contact style-none" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="widht"><a class="box-contact style-none" href="tel:+380961111111">+38 096 111 11 11 </a></li>
+          <li class="position-margin address">м. Київ, пр-т Лесі Українки, 26</li>
+          <li class="position-margin widht"><a class="box-contact style-none"
+              href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="position-margin widht"><a class="box-contact style-none" href="tel:+380961111111">+38 096 111 11
+              11</a></li>
         </ul>
       </div>
       <div class="footer-container ">
-        <h2 class="footer-title">ПРИЄДНУЙТЕСЬ</h2>
-        <ul class="list footer-gap ">
+        <p class="footer-title">ПРИЄДНУЙТЕСЬ</p>
+        <ul class="list  footer-gap">
           <li class="footer-position"><a class="style-none footer-link" href="">
               <svg class="footer-icon" width="20" height="20">
                 <use href="./imeges/icons.svg#icon-instagram-2-1"></use>
@@ -214,7 +247,8 @@
         <form name="email" autocomplete="on" novalidate>
           <p class="label-text">Підпишіться на розсилку</p>
           <div class="button-imput">
-            <input class="imput-footer" type="email" name="email" placeholder="E-mail" />
+            <label name="email"></label>
+            <input class="imput-footer" type="email" name="email" id="email" placeholder="E-mail" />
             <button type="submit" class="footer-button">Підписатися
               <svg class="icon-submit" width="24" height="24">
                 <use href="./imeges/icons.svg#icon-icon-send-2-1"></use>
@@ -223,8 +257,8 @@
         </form>
       </div>
     </div>
-  
   </footer>
+
   
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/modal.js"></script>

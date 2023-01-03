@@ -50,3 +50,12 @@
 display: flex;
     }
 }
+@include desktop{
+  .clients{
+width: calc((100% - 120px)/6);
+
+  }
+    .clients-list{
+flex-wrap: nowrap;
+    }
+}

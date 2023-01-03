@@ -8,10 +8,16 @@
 .footer-web{
   @include logo;
   color: var(--accent-color);
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
 }
 .footer-studio{
   @include logo;
+margin-bottom: 20px;
+display: flex;
   color: var(--main-color);
+  justify-content: center;
 
 }
 .address{
@@ -126,26 +132,25 @@ justify-content: center;
   .box-address {
     width: 100%;
 position: relative;
-padding-left: 75px;
-justify-content: center;
-
   }
 
   .footer-box {
     position: absolute;
     text-align: center;
-    
   }
   .address{
-@include footer_text_contaсts;
-color: var(--main-color);
-margin-bottom: 8px;
+        @include footer_text_contaсts;
+        color: var(--main-color);
+        margin-bottom: 8px;
   }
     .footer-container{
-      padding-top: 60px;
-
       @include text-prioriti;
-    
+      
     }
     
+}
+@include desktop{
+
+
+
 }

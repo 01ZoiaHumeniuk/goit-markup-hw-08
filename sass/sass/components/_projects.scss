@@ -1,3 +1,48 @@
 .link-non{
 display: none;
 }
+@include desktop{
+  .link-non {
+      display: flex;
+    }
+    .link-list {
+      width: calc((100% - 60px)/3);
+  
+    }
+    .link {
+      color: var(--title-text-color);
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.1666;
+      text-align: center;
+      margin-bottom: 50px;
+      padding-top: 0;
+    }
+  .text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0, 85;
+    text-align: center;
+    white-space: nowrap;
+    padding: 27px 0px;
+  }
+    .bgc {
+      background-color: var(--color-button);
+    }
+  .position-link {
+    position: relative;
+  }
+  .link-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 70px;
+    color: var(--main-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+    .item {
+      display: flex;
+      column-gap: 30px
+    }
+}
