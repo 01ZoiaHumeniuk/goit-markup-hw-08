@@ -1221,6 +1221,18 @@ html {
     color: var(--text-paragraph-color);
   }
 }
+@media screen and (min-width: 1200px) {
+  .box-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-box {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .bottom-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1376,5 +1388,11 @@ html {
     width: 100%;
     height: 146px;
     margin: 0, auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-projects {
+    width: calc((100% - 90px) / 3);
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=main.css.map */

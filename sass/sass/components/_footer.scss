@@ -150,7 +150,11 @@ position: relative;
     
 }
 @include desktop{
+.box-address{
+  display: flex;
 
-
-
+}
+.footer-box{
+  justify-content:flex-start;
+}
 }
